@@ -1,29 +1,29 @@
-# 🔐 SHA256 File Integrity Verifier
+# 🔐 SHA256 File Integrity Checker
 
-A simple Python project to check whether a file has been tampered with using SHA256 hashing. It stores and verifies hashes against saved records in a JSON file.
-
----
-
-## 📌 Features
-
-- Generate and store SHA256 hash of any file
-- Verify a file's integrity by comparing its hash to a saved hash
-- Uses JSON to store and manage hash records
+Hi there! 👋  
+This little Python project helps you check if a file has been changed or tampered with using SHA256 hash values.
 
 ---
 
-## 🛠 Tech Stack
+## ✨ What it does
 
-- Python 3.x
-- Modules: `hashlib`, `json`, `os`
+- 🔄 Generates SHA256 hash for a file
+- 🧾 Saves it to a JSON file
+- 🔍 Later checks if the file is the same or has been changed
 
 ---
 
-## 📁 File Structure
+## 📂 Files
 
-.
-├── files/
-│ └── test1.txt # Example file to verify
-├── hash_records.json # Stores file hash records
-├── save_file.py # Script to save file's hash
-└── verify_file.py # Script to verify file integrity
+- `save_file.py` → Saves the hash of your file
+- `verify_file.py` → Compares your file's current hash with the saved one
+- `hash_records.json` → Stores hash values
+- `files/test1.txt` → Example file (you can try your own!)
+
+---
+
+## 🛠 How to Use
+
+```bash
+python save_file.py      # Save hash
+python verify_file.py    # Check if file is still the same
